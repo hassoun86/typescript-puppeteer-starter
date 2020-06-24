@@ -1,0 +1,23 @@
+{
+  "name": "puppeteer-starter",
+  "version": "1.0.0",
+  "description": "Type script test starter",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ./node_modules/.bin/ts-node src/index.ts",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/puppeteer": "3.0.0",
+    "nodemon": "2.0.4",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5"
+  },
+  "dependencies": {
+    "puppeteer": "4.0.0"
+  }
+}
